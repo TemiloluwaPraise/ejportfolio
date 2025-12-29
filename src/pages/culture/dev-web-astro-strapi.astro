@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+import '../../components/Header.css';
+import '../../components/Footer.css';
+---
+
+<Layout title="How to build ultra-fast and manageable websites with Astro and Strapi | Workoholics">
+	<Header client:load />
+	<main style="padding-top: 100px; min-height: 80vh; padding: 8rem 2rem;">
+		<div style="max-width: 900px; margin: 0 auto;">
+			<span style="font-size: 0.875rem; font-weight: 600; opacity: 0.5; letter-spacing: 0.05em;">2023.04</span>
+			<h1 style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; margin: 2rem 0;">How to build ultra-fast and manageable websites with Astro and Strapi</h1>
+			<div style="font-size: 1.125rem; line-height: 1.8; opacity: 0.8;">
+				<p>Article content goes here...</p>
+			</div>
+		</div>
+	</main>
+	<Footer client:load />
+</Layout>
+

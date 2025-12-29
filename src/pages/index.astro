@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Services from '../components/Services';
+import Projects from '../components/Projects';
+import Culture from '../components/Culture';
+import ContactBanner from '../components/ContactBanner';
+import Footer from '../components/Footer';
+import SmoothScroll from '../components/SmoothScroll';
+---
+
+<Layout title="THEVICTOREJ® | Digital Agency">
+	<Header client:load />
+	<main>
+		<Hero client:load />
+		<About client:load />
+		<Services client:load />
+		<Projects client:load />
+		<Culture client:load />
+		<ContactBanner client:load />
+	</main>
+	<Footer client:load />
+	<SmoothScroll client:load />
+</Layout>

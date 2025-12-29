@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+import '../components/Header.css';
+import '../components/Footer.css';
+---
+
+<Layout title="Contact | Workoholics">
+	<Header client:load />
+	<main style="padding-top: 100px; min-height: 80vh; padding: 8rem 2rem;">
+		<div style="max-width: 1400px; margin: 0 auto;">
+			<h1 style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; margin-bottom: 3rem;">Contact</h1>
+			<div style="display: flex; flex-direction: column; gap: 2rem; max-width: 600px;">
+				<div>
+					<h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Get in touch</h2>
+					<p style="font-size: 1.125rem; line-height: 1.8; opacity: 0.8; margin-bottom: 1rem;">
+						And now it's time to talk about your project. Tell us more and let's make it happen.
+					</p>
+				</div>
+				<div>
+					<h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Visit us</h3>
+					<p style="font-size: 1rem; line-height: 1.8; opacity: 0.8;">
+						Done Bikendi Plaza 2, 1.a, 48001<br />
+						Based in Bilbao
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<Footer client:load />
+</Layout>
+

@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Culture from '../components/Culture';
+
+import '../components/Header.css';
+import '../components/Footer.css';
+import '../components/Culture.css';
+---
+
+<Layout title="Culture | Workoholics">
+	<Header client:load />
+	<main style="padding-top: 100px;">
+		<Culture client:load />
+	</main>
+	<Footer client:load />
+</Layout>
+

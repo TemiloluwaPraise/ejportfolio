@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+import '../../components/Header.css';
+import '../../components/Footer.css';
+---
+
+<Layout title="Athletic Club | Workoholics">
+	<Header client:load />
+	<main style="padding-top: 100px; min-height: 80vh; padding: 8rem 2rem;">
+		<div style="max-width: 1400px; margin: 0 auto;">
+			<h1 style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem;">Athletic Club</h1>
+			<p style="font-size: 1.25rem; line-height: 1.8; opacity: 0.8; margin-bottom: 3rem;">
+				Renewal of Athletic Club's digital ecosystem, a strategy to reconnect with fans
+			</p>
+		</div>
+	</main>
+	<Footer client:load />
+</Layout>
+
